@@ -1,0 +1,263 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/* app/page.module.css
+   REYN — Product Curation Grid
+   Inherits: dark background, parchment text, DM Mono, gold accents from globals.css
+*/
+
+.page_page__556_G {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ═══ HERO SECTION ═══ */
+.page_hero__7KFOs {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 4rem;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.page_heroInner__8WoKQ {
+  max-width: 800px;
+  text-align: center;
+}
+
+.page_heroTitle__ixXIp {
+  font-family: var(--f-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: var(--parchment);
+}
+
+.page_heroSubtitle__ZW2Yq {
+  font-family: var(--f-body);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--parch-soft);
+  max-width: 600px;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+}
+
+/* ═══ PRODUCT GRID ═══ */
+.page_grid__JZ9Cz {
+  padding: 5rem 2rem;
+}
+
+.page_gridInner__of_Yl {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 4rem 2rem;
+  gap: 4rem 2rem;
+}
+
+/* ═══ PRODUCT CARD ═══ */
+.page_card__Cf__u {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all var(--slow) var(--ease);
+}
+
+.page_card__Cf__u:hover {
+  transform: translateY(-8px);
+}
+
+/* Image placeholder — 3:4 aspect ratio */
+.page_cardImage__aHl9E {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(
+    135deg,
+    var(--swatch, var(--bg-hi)) 0%,
+    var(--bg) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  margin-bottom: 2rem;
+  transition: border-color var(--slow) var(--ease);
+}
+
+.page_card__Cf__u:hover .page_cardImage__aHl9E {
+  border-color: rgba(201, 168, 76, 0.4);
+}
+
+.page_cardGrain__eIR0e {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  pointer-events: none;
+}
+
+/* ── Collection tag ── */
+.page_cardCollection__8HwSf {
+  font-family: var(--f-body);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 0.8rem;
+}
+
+/* ── Product name ── */
+.page_cardName__4_8yZ {
+  font-family: var(--f-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--parchment);
+  margin-bottom: 0.6rem;
+}
+
+/* ── Price ── */
+.page_cardPrice__7Alkn {
+  font-family: var(--f-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+/* ── Material ── */
+.page_cardMaterial__K_uDE {
+  font-family: var(--f-body);
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--parch-mute);
+  line-height: 1.6;
+}
+
+/* ── Hover accent ── */
+.page_cardAccent__zYCS6 {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent var(--gold) transparent transparent;
+  opacity: 0;
+  transition: opacity var(--fast) var(--ease);
+  pointer-events: none;
+}
+
+.page_card__Cf__u:hover .page_cardAccent__zYCS6 {
+  opacity: 0.15;
+}
+
+/* ═══ FOOTER CTA ═══ */
+.page_footer__F3MD0 {
+  padding: 6rem 2rem;
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.page_footerInner__5TPTB {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page_footerTitle__ZjUp8 {
+  font-family: var(--f-display);
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  color: var(--parchment);
+}
+
+.page_footerText__qHi3L {
+  font-family: var(--f-body);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--parch-soft);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.01em;
+}
+
+.page_footerCta__tgqD2 {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background: transparent;
+  color: var(--parchment);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  font-family: var(--f-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all var(--fast) var(--ease);
+  cursor: pointer;
+}
+
+.page_footerCta__tgqD2:hover {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 768px) {
+  .page_hero__7KFOs {
+    min-height: 40vh;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .page_heroTitle__ixXIp {
+    font-size: 1.8rem;
+  }
+
+  .page_heroSubtitle__ZW2Yq {
+    font-size: 13px;
+  }
+
+  .page_grid__JZ9Cz {
+    padding: 4rem 1.5rem;
+  }
+
+  .page_gridInner__of_Yl {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem 1.5rem;
+  }
+
+  .page_cardImage__aHl9E {
+    margin-bottom: 1.5rem;
+  }
+
+  .page_cardName__4_8yZ {
+    font-size: 1.1rem;
+  }
+
+  .page_footer__F3MD0 {
+    padding: 4rem 1.5rem;
+  }
+
+  .page_footerTitle__ZjUp8 {
+    font-size: 1.7rem;
+  }
+
+  .page_footerText__qHi3L {
+    font-size: 12px;
+  }
+}
+

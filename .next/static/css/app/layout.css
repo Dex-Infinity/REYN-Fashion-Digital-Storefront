@@ -1,0 +1,194 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/components/FloatingWA.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/* FloatingWA.module.css */
+.FloatingWA_fab__hvE3I {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--wa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 0 rgba(37,211,102,0.5);
+  animation: FloatingWA_fabIn__k9E00 0.7s var(--ease) 1s both, FloatingWA_pulse__p2w3d 3s ease 2s infinite;
+  transition: transform var(--fast) var(--ease);
+}
+
+.FloatingWA_fab__hvE3I:hover { transform: scale(1.1) translateY(-3px); }
+.FloatingWA_fab__hvE3I:hover .FloatingWA_ring__f5kci { opacity: 1; transform: scale(1.18); }
+
+/* Gold outer ring — appears on hover */
+.FloatingWA_ring__f5kci {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s, transform 0.3s var(--ease);
+  pointer-events: none;
+}
+
+@keyframes FloatingWA_fabIn__k9E00 {
+  from { opacity: 0; transform: scale(0.5) translateY(20px); }
+  to   { opacity: 1; transform: scale(1)   translateY(0); }
+}
+
+@keyframes FloatingWA_pulse__p2w3d {
+  0%   { box-shadow: 0 0 0 0   rgba(37,211,102,0.45); }
+  70%  { box-shadow: 0 0 0 14px rgba(37,211,102,0);  }
+  100% { box-shadow: 0 0 0 0   rgba(37,211,102,0);   }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/components/Nav.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/* Nav.module.css */
+.Nav_bar__r_hdc {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 58px;
+  background: rgba(16,15,14,0.88);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+}
+
+/* vertical rotated label — purely decorative */
+.Nav_tag__FpR75 {
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+          text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 0.48rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.Nav_mark__uV0nF {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: var(--parchment);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color var(--fast) var(--ease);
+}
+.Nav_mark__uV0nF:hover { color: var(--gold); }
+
+.Nav_right__T5eOC {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.Nav_link__Ikos1 {
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--parch-soft);
+  transition: color var(--fast);
+}
+.Nav_link__Ikos1:hover { color: var(--parchment); }
+
+.Nav_bag__AXnYW {
+  color: var(--parch-soft);
+  display: flex;
+  transition: color var(--fast);
+}
+.Nav_bag__AXnYW:hover { color: var(--gold); }
+
+@media (max-width: 640px) {
+  .Nav_bar__r_hdc { padding: 0 20px; }
+  .Nav_right__T5eOC .Nav_link__Ikos1 { display: none; }
+  .Nav_tag__FpR75 { display: none; }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/* app/globals.css
+   REYN — Dark Editorial Luxury
+   Palette: near-black ground · parchment text · gold thread accent
+   Fonts:   Playfair Display (display italic) + DM Mono (body)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ── Ground colours (shift with active finish via JS) */
+  --page-r: 16;
+  --page-g: 15;
+  --page-b: 14;
+  --bg:     rgb(var(--page-r) var(--page-g) var(--page-b));
+  --bg-mid: rgb(calc(var(--page-r) + 6) calc(var(--page-g) + 6) calc(var(--page-b) + 5));
+  --bg-hi:  rgb(calc(var(--page-r) + 14) calc(var(--page-g) + 13) calc(var(--page-b) + 11));
+
+  /* ── Text */
+  --parchment:  #e8e0ce;
+  --parch-soft: #9e9484;
+  --parch-mute: #5c554a;
+
+  /* ── Accent */
+  --gold:       #c9a84c;
+  --gold-dim:   #7a6330;
+
+  /* ── WhatsApp */
+  --wa:         #25D366;
+
+  /* ── Fonts */
+  --f-display: 'Playfair Display', Georgia, serif;
+  --f-body:    'DM Mono', 'Courier New', monospace;
+
+  /* ── Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --fast: 0.25s;
+  --slow: 0.6s;
+}
+
+html {
+  background: var(--bg);
+  color: var(--parchment);
+  font-family: var(--f-body);
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--slow) var(--ease),
+              --bg var(--slow) var(--ease);
+}
+
+body { min-height: 100dvh; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+/* ── Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
+
+/* ── Selection */
+::selection { background: var(--gold); color: #111; }
+

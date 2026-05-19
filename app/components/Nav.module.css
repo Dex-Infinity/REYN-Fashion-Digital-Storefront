@@ -1,0 +1,71 @@
+/* Nav.module.css */
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 58px;
+  background: rgba(16,15,14,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+}
+
+/* vertical rotated label — purely decorative */
+.tag {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 0.48rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  user-select: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.mark {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: var(--parchment);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color var(--fast) var(--ease);
+}
+.mark:hover { color: var(--gold); }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.link {
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--parch-soft);
+  transition: color var(--fast);
+}
+.link:hover { color: var(--parchment); }
+
+.bag {
+  color: var(--parch-soft);
+  display: flex;
+  transition: color var(--fast);
+}
+.bag:hover { color: var(--gold); }
+
+@media (max-width: 640px) {
+  .bar { padding: 0 20px; }
+  .right .link { display: none; }
+  .tag { display: none; }
+}

@@ -1,0 +1,125 @@
+/* app/not-found.module.css */
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* ─ 404 Code ─ */
+.code {
+  font-family: var(--f-display);
+  font-size: clamp(5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.04em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+/* ─ Title ─ */
+.title {
+  font-family: var(--f-display);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  color: var(--parchment);
+  margin-bottom: 1rem;
+}
+
+/* ─ Description text ─ */
+.text {
+  font-family: var(--f-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--parch-soft);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* ─ Action buttons ─ */
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.backBtn,
+.homeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2rem;
+  font-family: var(--f-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--parchment);
+  cursor: pointer;
+  transition: all var(--fast) var(--ease);
+}
+
+.backBtn:hover,
+.homeBtn:hover {
+  background: var(--gold);
+  color: #111;
+}
+
+/* ─ Hint text with link ─ */
+.hint {
+  font-family: var(--f-body);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--parch-mute);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.link {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-dim);
+  transition: all var(--fast) var(--ease);
+}
+
+.link:hover {
+  color: var(--parchment);
+  border-bottom-color: var(--gold);
+}
+
+/* ─ Responsive ─ */
+@media (max-width: 480px) {
+  .page {
+    padding: 1.5rem;
+  }
+
+  .code {
+    margin-bottom: 0.5rem;
+  }
+
+  .actions {
+    gap: 1rem;
+  }
+
+  .backBtn,
+  .homeBtn {
+    padding: 0.75rem 1.5rem;
+    font-size: 11px;
+  }
+}
